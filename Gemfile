@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '3.2.2'
 
-gem 'rails', '6.1.7.3'
+gem 'rails', '7.1.5.2'
 
 gem 'coffee-rails', '~> 5.0.0'
 gem 'uglifier', '~> 4.2.0'
@@ -40,15 +40,15 @@ gem 'aws-sdk-ses', '~> 1.47.0'
 gem 'will_paginate', '~> 3.3.1'
 gem 'redis', '~> 4.6.0'
 gem 'hiredis', '~> 0.6.3'
-gem 'thinking-sphinx', '~> 5.5'
-gem 'flying-sphinx', '~> 1.2.0'
+gem 'thinking-sphinx', '~> 5.6', '>= 5.6.0'
+gem 'flying-sphinx', '~> 1.3.0'
 # Use patched v2.0.2
 # Fixes issues: Create a new delayed delta job if there is an existing delta job which has failed
 gem 'ts-delayed-delta', '2.1.0'
 gem 'possibly', '~> 1.0.1'
 
 gem 'delayed_job', '~> 4.1.3'
-gem 'delayed_job_active_record', '~> 4.1.3'
+gem 'delayed_job_active_record', '~> 4.1.8'
 
 gem 'web_translate_it', '~> 2.6.2'
 gem 'rails-i18n', '~> 6.0'
@@ -86,13 +86,13 @@ gem 'public_suffix' # Needed currently to set GA hostname right, probably not
 # needed anymore when GA script updated.
 
 # Session store was removed from Rails 4
-gem 'activerecord-session_store', '~> 2.0.0'
+gem 'activerecord-session_store', '~> 2.1.0'
 
 gem 'faraday', '~> 1.10.0'
 gem 'faraday_middleware', '~> 1.2.0'
 gem 'faraday-encoding', '~> 0.0.5'
 
-gem 'react_on_rails', '13.0.2'
+gem 'react_on_rails', '13.1.0'
 
 gem 'sitemap_generator', '~> 6.2.1'
 
@@ -142,7 +142,7 @@ group :test do
   gem 'capybara', '~> 3.37.0'
   gem 'rspec-rails', '~> 5.1.2'
 
-  gem 'cucumber-rails', '~> 2.2.0', require: false # require: false is needed for cucumber-rails
+  gem 'cucumber-rails', '~> 2.3.0', require: false # require: false is needed for cucumber-rails
   gem 'cucumber', '3.1.2'
 
   gem 'selenium-webdriver', '~> 4.1.0'
@@ -151,7 +151,7 @@ group :test do
   gem 'launchy', '~> 2.5.0'
   gem 'email_spec', '~> 2.2.0'
   gem 'timecop', '~> 0.9.5'
-  gem 'database_cleaner', '~> 2.0.1'
+  gem 'database_cleaner', '~> 2.0.2'
   gem 'connection_pool', '~> 2.2.5'
   gem 'rails-controller-testing', '~> 1.0.5'
 
