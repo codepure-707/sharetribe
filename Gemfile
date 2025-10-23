@@ -2,21 +2,21 @@ source 'https://rubygems.org'
 
 ruby '3.2.2'
 
-gem 'rails', '6.1.7.3'
+gem 'rails', '6.1.7.4'
 
 gem 'coffee-rails', '~> 5.0.0'
 gem 'uglifier', '~> 4.2.0'
 
-gem 'sass-rails', '~> 5.0.6'
+gem 'sass-rails', '~> 5.1.0'
 gem 'compass', git: 'https://github.com/Charly3X/compass.git'
 gem 'compass-rails', '~> 4.0.0'
 
-gem 'jquery-rails', '~> 4.4.0'
+gem 'jquery-rails', '~> 4.5.0'
 
 # Bundle the extra gems:
 
 # gem 'heroku' install the Heroku toolbelt (https://toolbelt.heroku.com/) instead (as gem had some problems)
-gem 'passenger', '~> 6.0.19'
+gem 'passenger', '~> 6.0.20'
 
 gem 'mysql2', '~> 0.5.4'
 gem 'bcrypt', '~> 3.1.17'
@@ -25,7 +25,7 @@ gem 'haml', '~> 5.2.2'
 gem 'sass', '3.4.24'
 # gem 'compass', '0.12.2'
 
-gem 'rack-attack', '~> 6.6.1'
+gem 'rack-attack', '~> 6.7.0'
 gem 'rest-client', '~> 2.1.0'
 
 gem 'paperclip', '~> 6.1.1', git: 'https://github.com/Charly3X/paperclip.git', branch: 'main'
@@ -51,13 +51,13 @@ gem 'delayed_job', '~> 4.1.3'
 gem 'delayed_job_active_record', '~> 4.1.3'
 
 gem 'web_translate_it', '~> 2.6.2'
-gem 'rails-i18n', '~> 6.0'
-gem 'devise', '~> 4.8.1'
+gem 'rails-i18n', '~> 7.0', '>= 7.0.1'
+gem 'devise', '~> 4.9.0'
 gem 'devise-encryptable', '~> 0.2.0'
-gem 'omniauth-facebook', '~> 9.0.0'
-gem 'omniauth-google-oauth2', '~> 1.1.1'
-gem 'omniauth-rails_csrf_protection', '~> 1.0.1'
-gem 'omniauth-linkedin-openid'
+gem 'omniauth-facebook', '~> 10.0.0'
+gem 'omniauth-google-oauth2', '~> 1.1.2'
+gem 'omniauth-rails_csrf_protection', '~> 1.0.2'
+gem 'omniauth-linkedin-openid', '>= 1.0.1'
 
 # Dynamic form adds helpers that are needed, e.g. error_messages
 gem 'dynamic_form', '~> 1.1.5', git: 'https://github.com/Charly3X/dynamic_form.git'
@@ -73,7 +73,7 @@ gem 'mercury-rails',
 gem 'countries', '~> 5.0.1', require: 'countries/global'
 gem 'mail_view', '~> 2.0.4'
 gem 'statesman', '~> 9.0.1'
-gem 'premailer-rails', '~> 1.11.1'
+gem 'premailer-rails', '~> 1.12.0'
 gem 'css_parser', '~> 1.11.0'
 gem 'stringex', '~> 2.8.5'
 gem 'paypal-sdk-permissions', '~> 1.96.4'
@@ -81,18 +81,18 @@ gem 'paypal-sdk-merchant', '~> 1.117.2'
 gem 'airbrake', '~> 10.0.4'
 gem 'stripe', '~> 5.55.0'
 
-gem 'lograge', '~> 0.12.0'
+gem 'lograge', '~> 0.13.0'
 gem 'public_suffix' # Needed currently to set GA hostname right, probably not
 # needed anymore when GA script updated.
 
 # Session store was removed from Rails 4
-gem 'activerecord-session_store', '~> 2.0.0'
+gem 'activerecord-session_store', '~> 2.1.0'
 
 gem 'faraday', '~> 1.10.0'
 gem 'faraday_middleware', '~> 1.2.0'
 gem 'faraday-encoding', '~> 0.0.5'
 
-gem 'react_on_rails', '13.0.2'
+gem 'react_on_rails', '13.1.0'
 
 gem 'sitemap_generator', '~> 6.2.1'
 
@@ -101,10 +101,10 @@ gem 'i18n-js', '~> 3.9'
 gem 'oj', '~> 3.13'
 
 # A store scoped to the request object for caching
-gem 'request_store', '~> 1.5.1'
+gem 'request_store', '~> 1.6.0'
 
 # ActionMailer dependency that needs forced update for security patch
-gem 'mail', '~> 2.8'
+gem 'mail', '~> 2.9', '>= 2.9.0'
 
 gem 'tzinfo-data', '~> 1.2022.1'
 
@@ -120,7 +120,7 @@ end
 group :development, :test do
   gem 'rubocop', '~> 1.29.0',  require: false
   gem 'rubocop-performance', '~> 1.13.3', require: false
-  gem 'rubocop-rails', '~> 2.14.2', require: false
+  gem 'rubocop-rails', '~> 2.15.0', require: false
   gem 'factory_girl_rails', '~> 4.9.0'
 end
 
@@ -139,10 +139,10 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', '~> 3.37.0'
-  gem 'rspec-rails', '~> 5.1.2'
+  gem 'capybara', '~> 3.37.1'
+  gem 'rspec-rails', '~> 6.0.0'
 
-  gem 'cucumber-rails', '~> 2.2.0', require: false # require: false is needed for cucumber-rails
+  gem 'cucumber-rails', '~> 2.3.0', require: false # require: false is needed for cucumber-rails
   gem 'cucumber', '3.1.2'
 
   gem 'selenium-webdriver', '~> 4.1.0'
@@ -170,7 +170,7 @@ end
 
 
 gem 'mini_racer', '~> 0.6.0', platforms: :ruby
-gem 'js-routes', '~> 2.2.3'
+gem 'js-routes', '~> 2.2.4'
 # Color utilities needed for landing page
 gem 'color', '~> 1.8'
 gem 'pry', '~> 0.14'
