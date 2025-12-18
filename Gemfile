@@ -35,7 +35,7 @@ gem 'delayed_paperclip', '~> 3.0.1'
 gem 'image_processing', '~> 1.12.2'
 gem 'mini_magick', '~> 4.11.0'
 
-gem 'aws-sdk-s3', '~> 1.114.0'
+gem 'aws-sdk-s3', '~> 1.208.0'
 gem 'aws-sdk-ses', '~> 1.47.0'
 gem 'will_paginate', '~> 3.3.1'
 gem 'redis', '~> 4.6.0'
